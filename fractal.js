@@ -11,7 +11,7 @@ const twig = require('@frctl/twig')({
     // filters: filters
 });
 
-fractal.set('project.title', 'Fredico Component Library');
+fractal.set('project.title', 'fredico Component Library');
 
 fractal.components.set('path', __dirname + '/src/components');
 

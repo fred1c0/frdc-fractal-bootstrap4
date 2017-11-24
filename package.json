@@ -1,7 +1,7 @@
 {
   "name": "frdc-component-library",
   "version": "1.0.0",
-  "description": "Fredico Component Library.",
+  "description": "fredico Component Library.",
   "main": "fractal.js",
   "dependencies": {
     "@frctl/fractal": "^1.1.7",

@@ -1,1 +1,1 @@
-## Fredico Component Library
+## fredico Component Library
