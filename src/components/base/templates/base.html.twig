@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}{{ _target.label }} | Fredico Components{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link media="all" rel="icon" type="image/png" href="/favicon64.png" />
+        <link media="all" rel="stylesheet" type="text/css" href="/css/style.css" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+
+        {% block js %}
+        <script src="/js/dev/jquery.js"></script>
+        <script src="/js/dev/popper.js"></script>
+        <script src="/js/dev/bootstrap.js"></script>
+        {% endblock %}
+    </body>
+</html>

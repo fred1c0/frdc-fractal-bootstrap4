@@ -1,0 +1,54 @@
+title: "Alerts"
+name: "alert"
+default: "primary"
+context:
+  alert:
+    text: This is a alert—check it out!
+variants:
+  -
+    name: "primary"
+    context:
+      alert:
+        modifier: "primary"
+  -
+    name: "primary-dismissible"
+    label: "Primary (dismissible)"
+    context:
+      alert:
+        modifier: "primary"
+        dismissible: true
+  -
+    name: "secondary"
+    context:
+      alert:
+        modifier: "secondary"
+  -
+    name: "success"
+    context:
+      alert:
+        modifier: "success"
+  -
+    name: "danger"
+    context:
+      alert:
+        modifier: "danger"
+  -
+    name: "warning"
+    context:
+      alert:
+        modifier: "warning"
+  -
+    name: "info"
+    context:
+      alert:
+        modifier: "info"
+  -
+    name: "light"
+    context:
+      alert:
+        modifier: "light"
+  -
+    name: "dark"
+    context:
+      alert:
+        modifier: "dark"

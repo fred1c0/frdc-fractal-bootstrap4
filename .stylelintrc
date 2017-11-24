@@ -1,0 +1,31 @@
+{
+  "rules": {
+    "selector-max-id": 0,
+    "color-no-invalid-hex": true,
+    "string-no-newline": true,
+    "unit-no-unknown": true,
+    "shorthand-property-no-redundant-values": true,
+    "property-no-unknown": true,
+    "block-no-empty": true,
+    "selector-type-no-unknown": true,
+    "no-extra-semicolons": true,
+    "max-nesting-depth": 3,
+    "no-duplicate-selectors": true,
+    "number-max-precision": 3,
+    "declaration-no-important": true,
+    "color-hex-case": "lower",
+    "function-parentheses-space-inside": "never",
+    "function-name-case": "lower",
+    "function-url-quotes": "always",
+    "number-no-trailing-zeros": true,
+    "string-quotes": "single",
+    "length-zero-no-unit": true,
+    "no-eol-whitespace": true,
+    "media-feature-name-blacklist": [
+      "max-width",
+      {
+        "message": "Use min-width for a mobile-first approach"
+      }
+    ]
+  }
+}

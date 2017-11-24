@@ -1,0 +1,11 @@
+<nav aria-label="breadcrumb" role="navigation">
+  <ol class="breadcrumb">
+    {% for item in items %}
+      {% if not loop.last %}
+        {% include "@breadcrumb-item" with { item } %}
+      {% else %}
+        {% include "@breadcrumb-item-active" with { item } %}
+      {% endif %}
+    {% endfor %}
+  </ol>
+</nav>

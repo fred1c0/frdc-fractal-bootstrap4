@@ -1,0 +1,19 @@
+context:
+  items:
+    -
+      label: "Previous"
+      url: "#"
+      is_disabled: true
+    -
+      label: "1"
+      url: "#"
+      is_active: true
+    -
+      label: "2"
+      url: "#"
+    -
+      label: "3"
+      url: "#"
+    -
+      label: "Next"
+      url: "#"

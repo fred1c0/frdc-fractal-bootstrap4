@@ -1,0 +1,7 @@
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    {% for item in items %}
+      {% include "@page-item" with { item } %}
+    {% endfor %}
+  </ul>
+</nav>

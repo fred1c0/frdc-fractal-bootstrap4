@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col">
+      <h1>Alerts</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      {% include "@alert" with { alert: { text: 'default' } } %}
+    </div>
+  </div>
+
+  {% set modifiers = ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'] %}
+
+  {% for modifier in modifiers %}
+    <div class="row">
+      <div class="col">
+        {% include "@alert" with { alert: { text: modifier, modifier: modifier } } %}
+      </div>
+    </div>
+  {% endfor %}
+
+  <h2>Dismissible</h2>
+
+  {% for modifier in modifiers %}
+    <div class="row">
+      <div class="col">
+        {% include "@alert" with { alert: { text: modifier, modifier: modifier, dismissible: true } } %}
+      </div>
+    </div>
+  {% endfor %}
+
+</div>

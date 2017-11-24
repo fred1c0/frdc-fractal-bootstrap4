@@ -1,0 +1,30 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col">
+      <h1>Breadcrumb</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      {% set items = [{ label: 'Home' }] %}
+      {% include "@breadcrumb" with { items } %}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      {% set items = [{ url: '#', label: 'Home' }, { label: 'Library' }] %}
+      {% include "@breadcrumb" with { items } %}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      {% set items = [{ url: '#', label: 'Home' }, { url: '#', label: 'Library' }, { label: 'Data' }] %}
+      {% include "@breadcrumb" with { items } %}
+    </div>
+  </div>
+
+</div>

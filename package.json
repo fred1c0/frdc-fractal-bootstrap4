@@ -1,0 +1,41 @@
+{
+  "name": "frdc-component-library",
+  "version": "1.0.0",
+  "description": "Fredico Component Library.",
+  "main": "fractal.js",
+  "dependencies": {
+    "@frctl/fractal": "^1.1.7",
+    "@frctl/twig": "git+https://github.com/frctl/twig.git",
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.12.9",
+    "stylelint": "^8.2.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-file-creator": "^0.1.3",
+    "grunt-postcss": "^0.9.0",
+    "grunt-prepend": "^0.1.2",
+    "grunt-sass": "^2.0.0",
+    "grunt-shell": "^2.1.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "scripts": {
+    "start": "./node_modules/@frctl/fractal/bin/fractal start --sync",
+    "build": "./node_modules/@frctl/fractal/bin/fractal build",
+    "export": "./node_modules/@frctl/fractal/bin/fractal export"
+  },
+  "keywords": [],
+  "author": "Mischa Zöller",
+  "license": "ISC",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+title: "Badges"
+name: "badge"
+default: "primary"
+context:
+  badge:
+    text: "Badge"
+variants:
+  -
+    name: "primary"
+    context:
+      badge:
+        modifier: "primary"
+  -
+    name: "secondary"
+    context:
+      badge:
+        modifier: "secondary"
+  -
+    name: "success"
+    context:
+      badge:
+        modifier: "success"
+  -
+    name: "danger"
+    context:
+      badge:
+        modifier: "danger"
+  -
+    name: "warning"
+    context:
+      badge:
+        modifier: "warning"
+  -
+    name: "info"
+    context:
+      badge:
+        modifier: "info"
+  -
+    name: "light"
+    context:
+      badge:
+        modifier: "light"
+  -
+    name: "dark"
+    context:
+      badge:
+        modifier: "dark"

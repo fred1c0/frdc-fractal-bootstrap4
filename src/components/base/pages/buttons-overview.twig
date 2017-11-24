@@ -1,0 +1,46 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col">
+      <h1>Buttons</h1>
+    </div>
+  </div>
+
+  {% set modifiers = ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark',] %}
+  {% set modifiers_outlined = ['outline-primary', 'outline-secondary', 'outline-success', 'outline-danger', 'outline-warning', 'outline-info', 'outline-light', 'outline-dark'] %}
+
+  {% for modifier in modifiers %}
+    <div class="row mb-1">
+      <div class="col">
+        {% include "@button" with { button: { modifier: modifier, text: modifier, size: 'sm' } } %}
+        {% include "@button" with { button: { modifier: modifier, text: modifier } } %}
+        {% include "@button" with { button: { modifier: modifier, text: modifier, size: 'lg' } } %}
+        {% include "@button" with { button: { modifier: modifier, text: modifier, disabled: true } } %}
+      </div>
+    </div>
+  {% endfor %}
+
+  <h2>Outlined</h2>
+
+  {% for modifier in modifiers_outlined %}
+    <div class="row mb-1">
+      <div class="col">
+        {% include "@button" with { button: { modifier: modifier, text: modifier, size: 'sm' } } %}
+        {% include "@button" with { button: { modifier: modifier, text: modifier } } %}
+        {% include "@button" with { button: { modifier: modifier, text: modifier, size: 'lg' } } %}
+        {% include "@button" with { button: { modifier: modifier, text: modifier, disabled: true } } %}
+      </div>
+    </div>
+  {% endfor %}
+
+  <h2>Block</h2>
+
+  {% for modifier in modifiers %}
+    <div class="row mb-1">
+      <div class="col">
+        {% include "@button" with { button: { modifier: modifier, text: modifier, block: true } } %}
+      </div>
+    </div>
+  {% endfor %}
+
+</div>

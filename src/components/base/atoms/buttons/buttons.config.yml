@@ -1,0 +1,111 @@
+title: "Button"
+name: "button"
+default: "primary"
+context:
+  button:
+    text: Button
+variants:
+  -
+    name: "primary"
+    context:
+      button:
+        modifier: "primary"
+  -
+    name: "primary-outline"
+    context:
+      button:
+        modifier: "outline-primary"
+  -
+    name: "primary-small"
+    context:
+      button:
+        modifier: "primary"
+        size: "sm"
+  -
+    name: "primary-large"
+    context:
+      button:
+        modifier: "primary"
+        size: "lg"
+  -
+    name: "primary-block"
+    context:
+      button:
+        modifier: "primary"
+        block: true
+  -
+    name: "primary-disabled"
+    context:
+      button:
+        modifier: "primary"
+        disabled: true
+  -
+    name: "secondary"
+    context:
+      button:
+        modifier: "secondary"
+  -
+    name: "secondary-outline"
+    context:
+      button:
+        modifier: "outline-secondary"
+  -
+    name: "success"
+    context:
+      button:
+        modifier: "success"
+  -
+    name: "success-outline"
+    context:
+      button:
+        modifier: "outline-success"
+  -
+    name: "danger"
+    context:
+      button:
+        modifier: "danger"
+  -
+    name: "danger-outline"
+    context:
+      button:
+        modifier: "outline-danger"
+  -
+    name: "warning"
+    context:
+      button:
+        modifier: "warning"
+  -
+    name: "warning-outline"
+    context:
+      button:
+        modifier: "outline-warning"
+  -
+    name: "info"
+    context:
+      button:
+        modifier: "info"
+  -
+    name: "info-outline"
+    context:
+      button:
+        modifier: "outline-info"
+  -
+    name: "light"
+    context:
+      button:
+        modifier: "light"
+  -
+    name: "light-outline"
+    context:
+      button:
+        modifier: "outline-light"
+  -
+    name: "dark"
+    context:
+      button:
+        modifier: "dark"
+  -
+    name: "dark-outline"
+    context:
+      button:
+        modifier: "outline-dark"
